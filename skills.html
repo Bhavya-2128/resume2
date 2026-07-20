@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Space Portfolio Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="sky" aria-hidden="true">
+        <div class="sky__nebula sky__nebula--a"></div>
+        <div class="sky__nebula sky__nebula--b"></div>
+        <div class="stars-container">
+            <div class="stars stars-1"></div>
+            <div class="stars stars-2"></div>
+            <div class="stars stars-3"></div>
+        </div>
+    </div>
+
+
+    <input type="checkbox" id="nav-toggle-check" class="nav-toggle-check">
+
+    <label for="nav-toggle-check" class="hamburger-menu" id="nav-toggle">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </label>
+
+    <nav id="nav-panel" class="mobile-nav-panel glass-card" aria-label="Page sections">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <nav class="social-rail" aria-label="Social links">
+        <ul>
+            <li>
+                <a href="https://github.com/HiteshCode-Projects/June_webDevelopment" target="_blank" rel="noopener"
+                    aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:bhavya23482007@gmail.com" aria-label="Email" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+        <span class="social-rail__line" aria-hidden="true"></span>
+    </nav>
+
+
+    <a href="projects.html" class="scroll-down-hint" id="scroll-hint" aria-label="Scroll down">
+        <img src="assets/scroll.svg" alt="Scroll down">
+    </a>
+
+
+    <aside class="sidebar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="skills.html" class="active" title="Skills"><i class="fa-solid fa-code"></i></a></li>
+                <li><a href="projects.html" title="Projects & Experience"><i class="fa-solid fa-briefcase"></i></a></li>
+                <li><a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <div class="app-container">
+
+        <main class="skills-container">
+
+            <div class="planet-decor" data-anchor="top" style="--p-size:130px;top:14%;right:7%">
+                <img src="planets/planet-12.svg" alt="Planet Decor" class="planet-decor__img" loading="lazy">
+            </div>
+
+            <div class="planet-decor" data-anchor="bottom" style="--p-size:80px;left:8%;bottom:14%">
+                <img src="planets/planet-04.svg" alt="Planet Decor" class="planet-decor__img" loading="lazy">
+            </div>
+
+            <div class="ast-decor" style="--ast-size:94px;top:13%;left:6%">
+                <img src="assets/astronaut-laptop.svg" alt="Astronaut Laptop" class="ast-decor__img">
+            </div>
+
+
+            <header class="skills__head">
+                <img class="title-img" src="assets/title-skills.svg" alt="MY SKILLS" width="312" height="132"
+                    data-reveal>
+                <img class="subtitle-img" src="assets/skills-sub.svg" alt="Here is a list of some of my skills"
+                    width="565" height="44" data-reveal data-reveal-delay="100">
+            </header>
+
+
+            <ul class="skills__grid">
+                <li class="skill" data-reveal data-reveal-delay="0">
+                    <span class="skill__name">HTML5 semantics</span>
+                    <span class="skill__tag">Structure</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="60">
+                    <span class="skill__name">CSS3 Styling</span>
+                    <span class="skill__tag">Design</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="120">
+                    <span class="skill__name">CSS Box Model</span>
+                    <span class="skill__tag">Layout</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="180">
+                    <span class="skill__name">CSS Flexbox</span>
+                    <span class="skill__tag">Layout</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="40">
+                    <span class="skill__name">Bootstrap Grid</span>
+                    <span class="skill__tag">Framework</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="100">
+                    <span class="skill__name">Bootstrap UI</span>
+                    <span class="skill__tag">Framework</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="160">
+                    <span class="skill__name">JavaScript ES6</span>
+                    <span class="skill__tag">Programming</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="220">
+                    <span class="skill__name">DOM Manipulation</span>
+                    <span class="skill__tag">Web logic</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="80">
+                    <span class="skill__name">Event Handlers</span>
+                    <span class="skill__tag">Web logic</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="140">
+                    <span class="skill__name">Responsive Web</span>
+                    <span class="skill__tag">Design</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="200">
+                    <span class="skill__name">Git / GitHub</span>
+                    <span class="skill__tag">Tooling</span>
+                </li>
+                <li class="skill" data-reveal data-reveal-delay="260">
+                    <span class="skill__name">CSS Hover effects</span>
+                    <span class="skill__tag">Transitions</span>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <ul class="contact__socials">
+                <li>
+                    <a href="https://github.com/HiteshCode-Projects/June_webDevelopment" target="_blank" rel="noopener"
+                        aria-label="GitHub" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"
+                        title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:bhavya23482007@gmail.com" aria-label="Email" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

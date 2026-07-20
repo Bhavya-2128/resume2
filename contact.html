@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Space Portfolio Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="sky" aria-hidden="true">
+        <div class="sky__nebula sky__nebula--a"></div>
+        <div class="sky__nebula sky__nebula--b"></div>
+        <div class="stars-container">
+            <div class="stars stars-1"></div>
+            <div class="stars stars-2"></div>
+            <div class="stars stars-3"></div>
+        </div>
+    </div>
+
+
+
+    <input type="checkbox" id="nav-toggle-check" class="nav-toggle-check">
+
+    <label for="nav-toggle-check" class="hamburger-menu" id="nav-toggle">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </label>
+
+    <nav id="nav-panel" class="mobile-nav-panel glass-card" aria-label="Page sections">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <nav class="social-rail" aria-label="Social links">
+        <ul>
+            <li>
+                <a href="https://github.com/HiteshCode-Projects/June_webDevelopment" target="_blank" rel="noopener"
+                    aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:bhavya23482007@gmail.com" aria-label="Email" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+        <span class="social-rail__line" aria-hidden="true"></span>
+    </nav>
+
+
+    <aside class="sidebar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="skills.html" title="Skills"><i class="fa-solid fa-code"></i></a></li>
+                <li><a href="projects.html" title="Projects & Experience"><i class="fa-solid fa-briefcase"></i></a></li>
+                <li><a href="contact.html" class="active" title="Contact"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <div class="app-container">
+
+        <main class="contact-container">
+
+            <div class="planet-decor" data-anchor="top" style="--p-size:80px;top:16%;right:12%">
+                <img src="planets/planet-09.svg" alt="Planet Decor" class="planet-decor__img" loading="lazy">
+            </div>
+
+            <div class="planet-decor" data-anchor="bottom" style="--p-size:120px;left:8%;bottom:20%">
+                <img src="planets/planet-11.svg" alt="Planet Decor" class="planet-decor__img" loading="lazy">
+            </div>
+
+            <div class="ast-decor hide-mobile" style="--ast-size:92px;top:13%;left:8%">
+                <img src="assets/astronaut.svg" alt="Astronaut Decor" class="ast-decor__img is-flipped">
+            </div>
+
+
+            <header class="contact__head">
+                <img class="title-img" src="assets/title-contact.svg" alt="CONTACT ME" width="351" height="132"
+                    data-reveal>
+                <p class="contact__blurb" data-reveal data-reveal-delay="80">Have a mission for me? Send a transmission.
+                </p>
+            </header>
+
+
+            <form class="contact__form glass-card" data-reveal data-reveal-delay="160" method="GET"
+                action="mailto:bhavya23482007@gmail.com" enctype="text/plain">
+                <label class="field">
+                    <span>EMAIL :</span>
+
+                    <input type="email" placeholder="you@galaxy.dev" required>
+                </label>
+                <label class="field">
+                    <span>SUBJECT :</span>
+                    <input type="text" name="subject" required placeholder="A transmission about…">
+                </label>
+                <label class="field">
+                    <span>CONTENT :</span>
+                    <textarea name="body" rows="5" required placeholder="Your message…"></textarea>
+                </label>
+
+                <div class="contact__actions">
+                    <button type="submit" class="btn contact__send">
+                        Send transmission <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <a class="contact__direct" href="mailto:bhavya23482007@gmail.com">bhavya23482007@gmail.com</a>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <ul class="contact__socials">
+                <li>
+                    <a href="https://github.com/HiteshCode-Projects/June_webDevelopment" target="_blank" rel="noopener"
+                        aria-label="GitHub" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"
+                        title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:bhavya23482007@gmail.com" aria-label="Email" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Experience | Space Portfolio Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="sky" aria-hidden="true">
+        <div class="sky__nebula sky__nebula--a"></div>
+        <div class="sky__nebula sky__nebula--b"></div>
+        <div class="stars-container">
+            <div class="stars stars-1"></div>
+            <div class="stars stars-2"></div>
+            <div class="stars stars-3"></div>
+        </div>
+    </div>
+
+
+    <input type="checkbox" id="nav-toggle-check" class="nav-toggle-check">
+
+    <label for="nav-toggle-check" class="hamburger-menu" id="nav-toggle">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </label>
+
+    <nav id="nav-panel" class="mobile-nav-panel glass-card" aria-label="Page sections">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <nav class="social-rail" aria-label="Social links">
+        <ul>
+            <li>
+                <a href="https://github.com/HiteshCode-Projects/June_webDevelopment" target="_blank" rel="noopener"
+                    aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:bhavya23482007@gmail.com" aria-label="Email" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+        <span class="social-rail__line" aria-hidden="true"></span>
+    </nav>
+
+
+    <a href="contact.html" class="scroll-down-hint" id="scroll-hint" aria-label="Scroll down">
+        <img src="assets/scroll.svg" alt="Scroll down">
+    </a>
+
+
+    <aside class="sidebar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="skills.html" title="Skills"><i class="fa-solid fa-code"></i></a></li>
+                <li><a href="projects.html" class="active" title="Projects & Experience"><i
+                            class="fa-solid fa-briefcase"></i></a></li>
+                <li><a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <div class="app-container">
+
+        <main class="projects-container">
+
+            <div class="planet-decor" data-anchor="top" style="--p-size:75px;top:18%;right:10%">
+                <img src="planets/planet-02.svg" alt="Planet Decor" class="planet-decor__img" loading="lazy">
+            </div>
+
+            <div class="planet-decor" data-anchor="bottom" style="--p-size:110px;right:6%;bottom:16%">
+                <img src="planets/planet-14.svg" alt="Planet Decor" class="planet-decor__img" loading="lazy">
+            </div>
+
+            <div class="ast-decor hide-mobile" style="--ast-size:120px;left:6%;bottom:16%">
+                <img src="assets/astronaut-fly.svg" alt="Astronaut Fly" class="ast-decor__img">
+            </div>
+
+
+            <section class="projects-section">
+                <div class="projects__head">
+                    <img class="title-img projects__title" src="assets/title-projects.svg" alt="MY PROJECTS" width="368"
+                        height="136" data-reveal>
+                </div>
+
+
+                <div class="carousel-container">
+                    <input type="radio" name="slide-select" id="proj-slide-1" checked class="slide-radio">
+                    <input type="radio" name="slide-select" id="proj-slide-2" class="slide-radio">
+                    <input type="radio" name="slide-select" id="proj-slide-3" class="slide-radio">
+                    <input type="radio" name="slide-select" id="proj-slide-4" class="slide-radio">
+
+                    <div class="carousel" data-reveal data-reveal-delay="120">
+
+                        <article class="card glass-card slide-card slide-card-1">
+                            <p class="card__code">PROJECT 1 : <span>EMP-001</span></p>
+                            <h3 class="card__title">Employee Dashboard</h3>
+                            <p class="card__desc">A dynamic, interactive staff interface built to register details,
+                                check directories, and manage work schedules using CSS and Javascript DOM selectors.</p>
+                            <ul class="card__tags">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>DOM Manipulation</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                            <div class="carousel-controls">
+                                <label for="proj-slide-4" class="carousel__nav carousel__nav--prev">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </label>
+                                <span class="carousel__counter">1 / 4</span>
+                                <label for="proj-slide-2" class="carousel__nav carousel__nav--next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </label>
+                            </div>
+                        </article>
+
+
+                        <article class="card glass-card slide-card slide-card-2">
+                            <p class="card__code">PROJECT 2 : <span>TECH-002</span></p>
+                            <h3 class="card__title">TechVerse Page</h3>
+                            <p class="card__desc">A multi-pane landing site designed for TechVerse, focusing on
+                                structural layout design, background gradients, and hover micro-animations.</p>
+                            <ul class="card__tags">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Containers</li>
+                                <li>Flexbox</li>
+                            </ul>
+
+                            <div class="carousel-controls">
+                                <label for="proj-slide-1" class="carousel__nav carousel__nav--prev">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </label>
+                                <span class="carousel__counter">2 / 4</span>
+                                <label for="proj-slide-3" class="carousel__nav carousel__nav--next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </label>
+                            </div>
+                        </article>
+
+
+                        <article class="card glass-card slide-card slide-card-3">
+                            <p class="card__code">PROJECT 3 : <span>BOOT-003</span></p>
+                            <h3 class="card__title">Bootstrap Catalog</h3>
+                            <p class="card__desc">A repository of responsive layouts, grids, navigation bars, and
+                                buttons implemented using the Bootstrap UI styling framework.</p>
+                            <ul class="card__tags">
+                                <li>Bootstrap</li>
+                                <li>CSS3</li>
+                                <li>HTML5</li>
+                                <li>Responsive</li>
+                            </ul>
+
+                            <div class="carousel-controls">
+                                <label for="proj-slide-2" class="carousel__nav carousel__nav--prev">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </label>
+                                <span class="carousel__counter">3 / 4</span>
+                                <label for="proj-slide-4" class="carousel__nav carousel__nav--next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </label>
+                            </div>
+                        </article>
+
+
+                        <article class="card glass-card slide-card slide-card-4">
+                            <p class="card__code">PROJECT 4 : <span>CAMP-004</span></p>
+                            <h3 class="card__title">Web Development Assets</h3>
+                            <p class="card__desc">A collection of fundamental web development items—highlighting flexbox
+                                layouts, hover rules, and standard box models.</p>
+                            <ul class="card__tags">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Box Model</li>
+                                <li>Transitions</li>
+                            </ul>
+
+                            <div class="carousel-controls">
+                                <label for="proj-slide-3" class="carousel__nav carousel__nav--prev">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </label>
+                                <span class="carousel__counter">4 / 4</span>
+                                <label for="proj-slide-1" class="carousel__nav carousel__nav--next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </label>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="experience-section">
+                <div class="projects__head">
+                    <img class="title-img exp__title" src="assets/title-experience.svg" alt="MY WORK EXPERIENCE"
+                        width="619" height="132" data-reveal>
+                </div>
+
+                <ol class="timeline">
+                    <li class="timeline__item" data-reveal data-reveal-delay="0">
+                        <span class="timeline__node" aria-hidden="true"></span>
+                        <article class="timeline__card glass-card">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">Frontend Developer</h3>
+                                <span class="timeline__period">2026 — Present</span>
+                            </div>
+                            <p class="timeline__org">Web Development Bootcamp</p>
+                            <p class="timeline__desc">Studying responsive web design architectures, mastering CSS
+                                layouts (Flexbox, grids, media queries), scripting basic web interaction handlers, and
+                                constructing layout panels via Bootstrap components.</p>
+                        </article>
+                    </li>
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+            <ul class="contact__socials">
+                <li>
+                    <a href="https://github.com/HiteshCode-Projects/June_webDevelopment" target="_blank" rel="noopener"
+                        aria-label="GitHub" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"
+                        title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:bhavya23482007@gmail.com" aria-label="Email" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

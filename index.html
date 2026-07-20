@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya | Space Portfolio Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="sky" aria-hidden="true">
+        <div class="sky__nebula sky__nebula--a"></div>
+        <div class="sky__nebula sky__nebula--b"></div>
+        <div class="stars-container">
+            <div class="stars stars-1"></div>
+            <div class="stars stars-2"></div>
+            <div class="stars stars-3"></div>
+        </div>
+    </div>
+
+
+
+    <input type="checkbox" id="nav-toggle-check" class="nav-toggle-check">
+
+    <label for="nav-toggle-check" class="hamburger-menu" id="nav-toggle">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </label>
+
+    <nav id="nav-panel" class="mobile-nav-panel glass-card" aria-label="Page sections">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <nav class="social-rail" aria-label="Social links">
+        <ul>
+            <li>
+                <a href="https://github.com/HiteshCode-Projects/June_webDevelopment" target="_blank" rel="noopener"
+                    aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:bhavya23482007@gmail.com" aria-label="Email" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+        <span class="social-rail__line" aria-hidden="true"></span>
+    </nav>
+
+
+    <a href="skills.html" class="scroll-down-hint" id="scroll-hint" aria-label="Scroll down">
+        <img src="assets/scroll.svg" alt="Scroll down">
+    </a>
+
+
+    <aside class="sidebar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" title="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="skills.html" title="Skills"><i class="fa-solid fa-code"></i></a></li>
+                <li><a href="projects.html" title="Projects & Experience"><i class="fa-solid fa-briefcase"></i></a></li>
+                <li><a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <div class="app-container">
+
+
+        <main>
+            <section class="hero" id="top">
+                <div class="hero__content">
+                    <img class="hero__title" src="assets/hero-title.svg"
+                        alt="A MESSAGE FROM EARTH — HELLO FELLOW GALAXY MEMBER" width="902" height="155" data-reveal>
+                    <p class="hero__name" data-reveal data-reveal-delay="140">I AM BHAVYA</p>
+                </div>
+
+                <div class="hero__interactive-scene">
+
+                    <div class="hero__scene" aria-hidden="true">
+                        <img class="hero__planet" src="assets/planet-full.svg" alt="Planet">
+                        <div class="hero__astronaut">
+                            <img class="hero__astronaut-img" src="assets/astronaut.svg" alt="Astronaut" width="101"
+                                height="125">
+                        </div>
+                    </div>
+
+
+                    <div class="hero__intro glass-card" data-reveal data-reveal-delay="240">
+                        <p>Software Engineer · Full-Stack Developer · ML Architect<br>
+                            Collapsing intricate algorithms into deterministic, high-performance systems. Navigating the
+                            space between neural network configurations, scalable backend systems, and immersive
+                            frontend
+                            interaction.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <ul class="contact__socials">
+                <li>
+                    <a href="https://github.com/HiteshCode-Projects/June_webDevelopment" target="_blank" rel="noopener"
+                        aria-label="GitHub" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"
+                        title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:bhavya23482007@gmail.com" aria-label="Email" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
